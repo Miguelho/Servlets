@@ -1,0 +1,36 @@
+ServletContext es un objeto de configuración general que se crea cuando una aplicación web se inicializa.
+
+En este objeto, defino los parámetros de inicialización mediante el archivo web.xml
+
+Este objeto está disponible para todos los Servlets que despleguemos dentro de la aplicación
+
+Los proveedores de Contenedores generar algún objeto que aporta infromación a nivel del API sobre la propia Webapp. Este objeto ServletContext
+
+pertenece al standard JEE 
+
+1 aplicación contiene n Sevlets
+
+
+
+Ciclo de vida:
+
+1. Deployment descriptor es el web.xml, y un contenedor de Servlets (Oracle Weblogic 12c) lo lee 
+y crea un par clave valor para cada context-param cuando inicializamos la webapp
+
+2. El contenedor crea una instancia nueva de ServletContext
+
+3. El contenedor de servlets da una referencia a cada par clave valor del parametro de inicialización de contexto.
+
+4. Todo Servlet y JSP tiene acceso al servletContext.
+
+
+Ejemplo:
+
+Quiero fijar una dirección de correo que sea accesible en toda la aplicación, para que los Servlets y JSP puedan utilizarla.
+
+
+
+
+ServletConfig es un objeto de configuración específico de cada Servlet y por tanto es sólo accesible por el idem.
+
+ServletContextListener actúa de "proxy" cuando el proceso de inicialización/destrucción del contexto ocurre.
