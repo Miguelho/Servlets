@@ -8,6 +8,15 @@
   <description>My project on Java Servlets</description>
   <modules>
   	<module>ServletContext</module>
+  	<module>SpringServlet</module>
+  	<module>ServletProducer</module>
   </modules>
+  
+  
+  <properties>
+  	<java-servlet-api.version>2.5</java-servlet-api.version>
+<!--   	0.10.1.1  org.apache.kafka.common.protocol.types.SchemaException Error reading field 'topic_metadata': Error reading array of size-->
+  	<kafka-clients.version>0.9.0.0</kafka-clients.version>
+  </properties>
   
 </project>

@@ -1,2 +1,6 @@
 .settings/
 .project
+/ServletContext/.classpath
+/ServletContext/target/
+ServletProducer/.classpath
+SpringServlet/.classpath
